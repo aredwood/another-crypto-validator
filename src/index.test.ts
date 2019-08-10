@@ -25,7 +25,7 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
-    test("DASH [XuCdb382fz3RhUQkZBTWsJ46B2TAB6EhwT] is valid",() => {
+    test.skip("DASH [XuCdb382fz3RhUQkZBTWsJ46B2TAB6EhwT] is valid",() => {
         const res = index("DASH","XuCdb382fz3RhUQkZBTWsJ46B2TAB6EhwT");
         expect(res).toBe(true)
     })

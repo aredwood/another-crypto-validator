@@ -1,6 +1,11 @@
 {
   "name": "another-crypto-validator",
   "version": "0.1.0",
+  "scripts": {
+    "test": "jest",
+    "coverage":"jest --coverage --coverageDirectory ./site/coverage",
+    "docs":"typedoc --out ./site/docs"
+  },
   "main": "./dist/index.js",
   "repository": "https://github.com/aredwood/another-crypto-validator.git",
   "author": "Alex Redwood <hello@alexredwood.com>",
@@ -15,9 +20,7 @@
     "jest": "^24.8.0",
     "ripple-regex": "^1.1.6",
     "ts-jest": "^24.0.2",
+    "typedoc": "^0.15.0",
     "typescript": "^3.5.3"
-  },
-  "scripts": {
-    "test": "jest"
   }
 }
