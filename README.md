@@ -4,4 +4,7 @@ creating this because I kept founding faulty crypto libraries, so I made one tha
 
 
 ## Documentation
-*soon*
+https://another-crypto-validator.netlify.com/docs
+
+## Coverage
+https://another-crypto-validator.netlify.com/coverage
