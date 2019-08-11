@@ -4,7 +4,9 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage --coverageDirectory ./site/coverage",
-    "docs": "typedoc --out ./site/docs"
+    "docs": "typedoc --out ./site/docs",
+    "prepublish": "yarn test && yarn build",
+    "build":"tsc"
   },
   "main": "./dist/index.js",
   "repository": "https://github.com/aredwood/another-crypto-validator.git",
