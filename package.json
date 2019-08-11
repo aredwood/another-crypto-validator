@@ -12,6 +12,7 @@
   "repository": "https://github.com/aredwood/another-crypto-validator.git",
   "author": "Alex Redwood <hello@alexredwood.com>",
   "license": "MIT",
+  "files": ["dist"],
   "private": false,
   "dependencies": {
     "@types/jest": "^24.0.17",
