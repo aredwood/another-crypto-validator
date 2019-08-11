@@ -7,7 +7,7 @@
     "docs": "typedoc --out ./site/docs",
     "prepublish": "yarn test && yarn build",
     "build": "tsc",
-    "badges":"jest-coverage-badges input ./site/coverage/coverage-summary.json output ./site/coverage/bades"
+    "badges":"jest-coverage-badges input ./site/coverage/coverage-summary.json output ./site/coverage/badges"
   },
   "main": "./dist/index.js",
   "repository": "https://github.com/aredwood/another-crypto-validator.git",
