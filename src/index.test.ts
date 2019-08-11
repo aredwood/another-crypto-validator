@@ -25,8 +25,16 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
-    test.skip("DASH [XuCdb382fz3RhUQkZBTWsJ46B2TAB6EhwT] is valid",() => {
-        const res = index("DASH","XuCdb382fz3RhUQkZBTWsJ46B2TAB6EhwT");
+    test("DASH [XqjuCuaMNpPnS1V7oqP8CQZibRXbTwDBJZ] is valid",() => {
+        const res = index("DASH","XqjuCuaMNpPnS1V7oqP8CQZibRXbTwDBJZ");
+        expect(res).toBe(true)
+    })
+})
+
+describe("edge cases",() => {
+    test("valid address, unknown ERC20 currency",() => {
+        const res = index("KED","0x8394CcDb4Ba736770B4020B060794a4cC69CDAf6");
+
         expect(res).toBe(true)
     })
 })

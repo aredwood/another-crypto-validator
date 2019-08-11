@@ -14,7 +14,11 @@ const knownCurrencies : ICurrency[] = [
     {
         symbol:"XRP",
         requiresTag:true
-    }
+    },
+    {
+        symbol:"DASH"
+    },
+    
 ]
 
 
