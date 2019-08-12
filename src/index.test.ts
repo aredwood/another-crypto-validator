@@ -43,6 +43,12 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
+    // t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5
+    test("ZCASH [t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5] is valid",() => {
+        const res = index("ZCASH","t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5");
+        expect(res).toBe(true)
+    })
+
     test("DASH [XqjuCuaMNpPnS1V7oqP8CQZibRXbTwDBJZ] is valid",() => {
         const res = index("DASH","XqjuCuaMNpPnS1V7oqP8CQZibRXbTwDBJZ");
         expect(res).toBe(true)
