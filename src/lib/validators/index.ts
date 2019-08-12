@@ -16,7 +16,7 @@ import coinaAddressValidator from "coin-address-validator";
 
 import { ICurrency } from "../../types";
 //@ts-ignore
-import {validate as multicoin} from "crypto-wallet-address-validator";
+import {validate as multicoin} from "wallet-address-validator";
 
 interface IValidator{
     (address:string,tag?:string) : boolean
@@ -70,6 +70,16 @@ validators['BCH'] = (address:string) : boolean => {
     const res = bchRegex({
         exact:true
     }).test(address) as boolean;
+    return res;
+}
+
+validators['ETC'] = (address:string) : boolean => {
+    const res = multicoin(address,"ETC") as boolean;
+    return res;
+}
+
+validators['ZCASH'] = (address:string) : boolean => {
+    const res = multicoin(address,"ZCASH") as boolean;
     return res;
 }
 

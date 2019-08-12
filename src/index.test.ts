@@ -32,6 +32,12 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
+    test("ETC [0x17b9D84E01cb7c8245Da2168F845A5eCa6616402] is valid",() => {
+        const res = index("ETC","0x17b9D84E01cb7c8245Da2168F845A5eCa6616402");
+
+        expect(res).toBe(true)
+    })
+
     test("BCH [bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x] is valid",() => {
         const res = index("BCH","bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x");
         expect(res).toBe(true)

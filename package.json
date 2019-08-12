@@ -1,6 +1,6 @@
 {
   "name": "another-crypto-validator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage --coverageDirectory ./site/coverage",
@@ -32,6 +32,7 @@
     "ripple-regex": "^1.1.6",
     "ts-jest": "^24.0.2",
     "typedoc": "^0.15.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "wallet-address-validator": "^0.2.4"
   }
 }
