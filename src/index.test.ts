@@ -25,6 +25,13 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
+    // LYcj8mck83grBGM2ooamg6Q2txk5zTC6jr
+    test("LTC [LYcj8mck83grBGM2ooamg6Q2txk5zTC6jr] is valid",() => {
+        const res = index("LTC","LYcj8mck83grBGM2ooamg6Q2txk5zTC6jr");
+
+        expect(res).toBe(true)
+    })
+
     test("BCH [bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x] is valid",() => {
         const res = index("BCH","bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x");
         expect(res).toBe(true)

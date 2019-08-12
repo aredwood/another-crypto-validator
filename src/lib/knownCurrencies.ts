@@ -11,6 +11,9 @@ const knownCurrencies : ICurrency[] = [
         symbol:"BCH"
     },
     {
+        symbol:"LTC"
+    },
+    {
         symbol:"EOS",
         requiresTag:true
     },

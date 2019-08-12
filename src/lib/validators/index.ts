@@ -8,6 +8,8 @@ import xrpRegex from "ripple-regex";
 import bchRegex from "bitcoincash-regex";
 //@ts-ignore
 import dashRegex from "dash-regex"
+//@ts-ignore
+import ltcRegex from "litecoin-regex";
 
 //@ts-ignore
 import coinaAddressValidator from "coin-address-validator";
@@ -66,6 +68,13 @@ validators['XRP'] = (address:string,tag?:string) : boolean => {
 
 validators['BCH'] = (address:string) : boolean => {
     const res = bchRegex({
+        exact:true
+    }).test(address) as boolean;
+    return res;
+}
+
+validators['LTC'] = (address:string) : boolean => {
+    const res = ltcRegex({
         exact:true
     }).test(address) as boolean;
     return res;
