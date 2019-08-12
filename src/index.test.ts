@@ -38,7 +38,7 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
-    test("BCH [bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x] is valid",() => {
+    test("BCH [qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x] is valid",() => {
         const res = index("BCH","bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x");
         expect(res).toBe(true)
     })
