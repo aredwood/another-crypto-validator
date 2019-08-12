@@ -11,7 +11,7 @@ const knownCurrencies : ICurrency[] = [
         symbol:"BCH"
     },
     {
-        symbol:"ZCASH"
+        symbol:"ZEC"
     },  
     {
         symbol:"ETC"

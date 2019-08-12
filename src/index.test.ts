@@ -44,8 +44,8 @@ describe("testing positive addresses",() => {
     })
 
     // t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5
-    test("ZCASH [t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5] is valid",() => {
-        const res = index("ZCASH","t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5");
+    test("ZEC [t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5] is valid",() => {
+        const res = index("ZEC","t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5");
         expect(res).toBe(true)
     })
 

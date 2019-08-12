@@ -78,7 +78,7 @@ validators['ETC'] = (address:string) : boolean => {
     return res;
 }
 
-validators['ZCASH'] = (address:string) : boolean => {
+validators['ZEC'] = (address:string) : boolean => {
     const res = multicoin(address,"ZCASH") as boolean;
     return res;
 }
