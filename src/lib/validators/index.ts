@@ -68,7 +68,7 @@ validators['XRP'] = (address:string,tag?:string) : boolean => {
 
 validators['BCH'] = (address:string) : boolean => {
 
-    if(address[0] !== "q" || address[0] !== "p"){
+    if(address[0] !== "q" && address[0] !== "p"){
         return false;
     }
     const res = bchRegex({

@@ -39,7 +39,7 @@ describe("testing positive addresses",() => {
     })
 
     test("BCH [qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x] is valid",() => {
-        const res = index("BCH","bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x");
+        const res = index("BCH","qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x");
         expect(res).toBe(true)
     })
 
