@@ -8,6 +8,9 @@ const knownCurrencies : ICurrency[] = [
         symbol:"BTC"
     },
     {
+        symbol:"BCH"
+    },
+    {
         symbol:"EOS",
         requiresTag:true
     },
