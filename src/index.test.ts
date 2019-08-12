@@ -43,6 +43,16 @@ describe("testing positive addresses",() => {
         expect(res).toBe(true)
     })
 
+    test("BCH [bitcoincash:qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x] is valid",() => {
+        const res = index("BCH","qzalxacppk3szcak2k5elzcpank0xdfcmu4zy88k6x");
+        expect(res).toBe(true)
+    })
+
+    test("BCH [1Mbq9iT2s6yRcAX73mFTHE5kcYCvq1Yytk] is valid",() => {
+        const res = index("BCH","1Mbq9iT2s6yRcAX73mFTHE5kcYCvq1Yytk");
+        expect(res).toBe(true)
+    })
+
     // t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5
     test("ZEC [t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5] is valid",() => {
         const res = index("ZEC","t1TvV7Nmxt3dPPJnKoLbJu66CKzg3Yg4gb5");
